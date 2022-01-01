@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
+      mono: ["Roboto Mono", 'monospace']
     },
     container: {
       center: true,

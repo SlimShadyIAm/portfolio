@@ -29,7 +29,7 @@ const Contributions = () => {
 
   return (
     <div className="container mt-8 mb-16">
-      <div className="font-bold text-3xl mb-3">Contributions</div>
+      <div className="font-bold text-gray-800 text-3xl mb-3">Contributions</div>
       <div className="flex flex-row space-x-4">
         {contributions.map((contribution, index) => {
           return (
