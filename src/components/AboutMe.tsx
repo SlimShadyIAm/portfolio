@@ -1,4 +1,5 @@
 import { faUser, IconDefinition } from '@fortawesome/free-regular-svg-icons'
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
@@ -12,18 +13,18 @@ const AboutMe = () => {
   return (
     <div className="bg-blue-600 py-12">
       <div className="container">
-        <div className="flex flex-row text-center bg-white shadow-lg">
-          <div className="flex-1 border-r-gray-400 px-24 py-8">
+        <div className="flex sm:flex-col md:flex-row text-center bg-white shadow-lg">
+          <div className="flex-1 border-gray-100 border-r px-16 py-8">
             <AboutMeEntry title="Who I Am" icon={faUser} skills={[
               "I'm an enthusiastic and passionate worker. I love building meaningful relationships when working with people.              "
             ]} />
-            <AboutMeEntry title="About Me" icon={faUser} skills={[
+            <AboutMeEntry title="About Me" skills={[
               "22 years old",
               "Pakistani born",
-              "Computer Science BSc",
-              "1st year MSc Student at the Technical University of Denmark"
+              "Computer Science BSc from UTwente",
+              "MSc Student at DTU in Denmark"
             ]} />
-            <AboutMeEntry title="My Hobbies" skills={[
+            <AboutMeEntry title="Hobbies And Interests" skills={[
               "PC building enthusiast",
               "Hackintoshing and jailbreaking",
               "Online community management",
@@ -31,10 +32,25 @@ const AboutMe = () => {
               "Podcasts and reading",
               "Travelling",
               "Cooking",
-            ]}/>
+            ]} />
           </div>
-          <div className="flex-1 border-r-gray-400 px-8 py-8">
-            Hey
+          <div className="flex-1 px-16 py-8">
+            <AboutMeEntry title="What I Do" icon={faLaptopCode} skills={[
+              "My primary focus is on frontend design and development. I enjoy making beautiful, responsive and fast websites.            "
+            ]} />
+            <AboutMeEntry title="My Tools" skills={[
+              "Python",
+              "React",
+              "Flutter",
+              "HTML5 and CSS3",
+              "TailwindCSS",
+              "JavaScript",
+              "NodeJS",
+              "Figma",
+              "Java",
+              "MongoDB and SQL",
+              "Linux and server administration",
+            ]} />
           </div>
         </div>
       </div>
@@ -44,10 +60,10 @@ const AboutMe = () => {
 
 const AboutMeEntry: React.FC<AboutMeEntryProps> = ({ title, icon, skills }) => {
   return (
-    <div className="flex-1 border-r-gray-400">
-      { icon ? <p className="text-5xl text-blue-600 font-bold my-10"><FontAwesomeIcon icon={icon} /></p> : "" }
-      <p className="text-lg uppercase column-title mt-12 mb-6">{title}</p>
-      { skills.map((skill, index) => <p key={index} className="text-md text-gray-900 my-1">{skill}</p>) }
+    <div className="flex-1">
+      {icon ? <p className="text-5xl text-blue-600 font-bold my-10"><FontAwesomeIcon icon={icon} /></p> : ""}
+      <p className="text-md uppercase column-title mt-12 mb-6">{title}</p>
+      {skills.map((skill, index) => <p key={index} className="text-md text-gray-800 my-1">{skill}</p>)}
     </div>
   )
 }

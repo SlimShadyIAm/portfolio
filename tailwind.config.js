@@ -3,15 +3,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: {
-        // DEFAULT: "1rem",
-        xs: "2rem",
-        sm: "2rem",
-        md: "10rem",
+        DEFAULT: "0.5rem",
+        sm: "0.5rem",
+        md: "1rem",
         lg: "2rem",
-        xl: "8rem"
+        xl: "6rem",
+        '2xl': "14rem"
       }
     },
     extend: {

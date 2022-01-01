@@ -1,6 +1,7 @@
 
 import { Fragment } from "react"
 import AboutMe from "../components/AboutMe"
+import Footer from "../components/Footer"
 import Header from "../components/Header"
 import HeroHome from "../components/HeroHome"
 
@@ -14,6 +15,7 @@ const Home = () => {
         <div className="spacer"></div>
         <AboutMe />
       </div>
+      <Footer />
     </Fragment>
   )
 }
