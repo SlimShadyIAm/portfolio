@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@font-face {
+	font-family: "San Francisco Black";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.eot?#iefix)
+			format("embedded-opentype"),
+		url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff2)
+			format("woff2"),
+		url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff)
+			format("woff"),
+		url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.ttf)
+			format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mask {
+	background-image: url("./assets/img/gradient.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent !important;
+	display: inline-block;
+	line-height: 1.2em;
+}
+
+p.intro-text {
+	font-family: "San Francisco Black";
+}
+
+.spacer {
+	aspect-ratio: 700/100;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('./assets/img/waves.svg');
+}
+
+.column-title {
+	font-family: "Roboto Mono", monospace;
+	color: #222;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.spacer {
+		aspect-ratio: 500/200;
+	}
+}
