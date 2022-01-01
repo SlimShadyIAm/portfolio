@@ -22,6 +22,7 @@ module.exports = {
         'transparent-grey-active': 'rgba(0,0,0,.08)!important',
         'transparent-grey': 'rgba(0,0,0,.12)!important',
         'slim-purple': '#7d68dd',
+        'slim-blue': '#3273dc',
       },
     },
   },

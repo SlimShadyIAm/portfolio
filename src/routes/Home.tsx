@@ -8,15 +8,15 @@ import HeroHome from "../components/HeroHome"
 
 const Home = () => {
   return (
-    <Fragment>
+    <>
       <div className="bg-slim-purple">
         <Header />
         <HeroHome />
         <div className="spacer"></div>
-        <AboutMe />
       </div>
+      <AboutMe />
       <Footer />
-    </Fragment>
+    </>
   )
 }
 

@@ -11,7 +11,7 @@ interface AboutMeEntryProps {
 
 const AboutMe = () => {
   return (
-    <div className="bg-blue-600 py-12">
+    <div className="bg-slim-blue py-12">
       <div className="container">
         <div className="flex sm:flex-col md:flex-row text-center bg-white shadow-lg">
           <div className="flex-1 border-gray-100 border-r px-16 py-8">
