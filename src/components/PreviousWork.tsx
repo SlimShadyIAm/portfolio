@@ -272,7 +272,7 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
             </p>
           )}
           {images.length > 1 || source || demo ? (
-            <div className='flex my-1 space-x-2'>
+            <div className='flex flex-col sm:flex-row my-1 space-y-1 sm:space-y-0 sm:space-x-1'>
               {images.length == 1 ? "" : (
                 <>
                   <a className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md overflow-hidden whitespace-nowrap sm:grow md:grow-0 text-center" onClick={openLightbox}><FontAwesomeIcon icon={faImage} className='mr-2' /> Gallery</a>
