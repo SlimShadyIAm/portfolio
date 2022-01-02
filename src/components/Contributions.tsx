@@ -30,7 +30,7 @@ const Contributions = () => {
   return (
     <div className="container mt-8 mb-16">
       <div className="font-bold text-gray-800 text-3xl mb-3">Contributions</div>
-      <div className="flex flex-row space-x-4">
+      <div className="flex-row grid grid-cols-12 gap-4">
         {contributions.map((contribution, index) => {
           return (
             <Contribution image={contribution.image} title={contribution.title} subtitle={contribution.subtitle} demo={contribution.demo} />
@@ -43,17 +43,14 @@ const Contributions = () => {
 
 const Contribution: React.FC<Props> = ({ image, title, subtitle, demo }) => {
   return (
-    <div className="bg-white rounded-xl custom-shadow overflow-hidden md:max-w-2xl flex-1">
-      <div className="md:flex">
-        <div className="md:shrink-0">
-          <img className="h-48 w-full object-cover md:h-full md:w-48" src={image} />
-        </div>
-        <div className="p-8">
+    <div className="bg-white rounded-3xl custom-shadow overflow-hidden sm:flex md:flex lg:flex col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6">
+        <img className="object-cover w-full sm:w-32 md:w-52 md:h-full" src={image} />
+        <div className="px-8 py-6 flex flex-col">
           <p className="block mt-1 text-2xl leading-tight font-bold text-gray-700">{title}</p>
-          <p className="mt-2 text-gray-600">{subtitle}</p>
+          <p className="mt-2 text-gray-600" >{subtitle}</p>
+          <div className="flex-grow"></div>
           <p className="mt-2"><a href={demo} className="uppercase tracking-wide text-sm text-slim-blue font-semibold hover:text-blue-800 transition-colors"><FontAwesomeIcon icon={faSearch} /> Demo</a></p>
         </div>
-      </div>
     </div>
   )
 }

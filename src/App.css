@@ -66,6 +66,6 @@ p.intro-text {
 	border-radius: 5px;
 }
 
-a {
-	@apply text-slim-blue hover:text-blue-800 transition-colors
+.description a {
+	@apply text-slim-blue hover:text-blue-800 visited:text-purple-700 transition-colors
 }

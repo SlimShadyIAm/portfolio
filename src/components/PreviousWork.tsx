@@ -80,7 +80,7 @@ const PreviousWork = () => {
           /\.(png|jpe?g|svg)$/
         )
       ),
-    },				
+    },
     {
       title: "ApexTweaks",
       tools: ["Jekyll", "Custom CSS", "Flexbox"],
@@ -145,7 +145,7 @@ const PreviousWork = () => {
         )
       ),
     },
-            {
+    {
       title: "TalkBoard",
       tools: ["VueJS", "Gridsome", "Bulma", "Github actions"],
       description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
@@ -210,10 +210,10 @@ const PreviousWork = () => {
     },
     {
       title: "This website!",
-      tools: ["VueJS", "Bulma"],
-      description: `This website was written by me, using the frontend JavaScript framework <a href='https://vuejs.org'>Vue.js</a>, and <a href="https://bulma.io">Bulma</a> as the CSS framework.`,
+      tools: ["React", "TailwindCSS"],
+      description: `This website was written by me, using the frontend JavaScript framework <a href='https://reactjs.org'>React.js</a>, and <a href="https://tailwindcss.com">TailwindCSS</a> as the CSS framework.`,
       demo: "https://aamirfarooq.dev",
-      source: "https://github.com/SlimShadyIAm/portfolio-vue/",
+      source: "https://github.com/SlimShadyIAm/portfolio-react/",
       images: importAll(
         require.context(
           "../assets/img/works/portfolio",
@@ -254,18 +254,18 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
 
   return (
     <div className="custom-shadow">
-      <div className="bg-slim-blue px-4 py-2 text-white font-mono font-normal uppercase rounded-t-sm">{title}</div>
-      <div className="flex pt-4 pb-4 flex-row">
-        <div className="px-4 flex justify-center items-center flex-col" style={{width: "41.66667%"}}>
-          <img src={images[0]} style={{maxHeight: "250px"}}/>
+      <div className="bg-slim-blue px-4 py-2 text-white font-mono text-sm font-normal uppercase rounded-t-sm">{title}</div>
+      <div className="pt-4 pb-4 flex-row grid grid-cols-12 gap-4 px-3 md:px-0">
+        <div className="px-4 flex justify-center items-center flex-col col-span-12 md:col-span-5">
+          <img src={images[0]} style={{ maxHeight: "250px" }} />
         </div>
-        <div className="px-4 flex flex-col" style={{width: "58.33333%"}}>
+        <div className="px-4 flex flex-col col-span-12 md:col-span-7">
           <div className="grow mb-2 description-body" dangerouslySetInnerHTML={{ __html: description }} />
           {!tools ? "" : (
             <div className='my-1 space-x-1'>
               {tools.map((tool, index) => {
                 return (
-                  <span className="px-2 py-1 text-white bg-slim-blue rounded text-xs font-mono uppercase" key={index}>{tool}</span>
+                  <span className="px-2 py-1 text-white bg-slim-blue rounded text-xs font-mono uppercase whitespace-nowrap" key={index}>{tool}</span>
                 )
               })
               }
