@@ -257,25 +257,25 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
       <div className="bg-slim-blue px-4 py-2 text-white font-mono text-sm font-normal uppercase rounded-t-sm">{title}</div>
       <div className="pt-4 pb-4 flex-row grid grid-cols-12 gap-4 px-3 md:px-0">
         <div className="px-4 flex justify-center items-center flex-col col-span-12 md:col-span-5">
-          <img src={images[0]} style={{ maxHeight: "250px" }} />
+          <img src={images[0]} style={{ maxHeight: "250px" }} loading="lazy" />
         </div>
         <div className="px-4 flex flex-col col-span-12 md:col-span-7">
-          <div className="grow mb-2 description-body" dangerouslySetInnerHTML={{ __html: description }} />
+          <div className="grow mb-2 description" dangerouslySetInnerHTML={{ __html: description }} />
           {!tools ? "" : (
-            <div className='my-1 space-x-1'>
+            <p className='my-1 space-y-1'>
               {tools.map((tool, index) => {
                 return (
-                  <span className="px-2 py-1 text-white bg-slim-blue rounded text-xs font-mono uppercase whitespace-nowrap" key={index}>{tool}</span>
+                  <span className="px-2 py-1 mx-0.5 text-white bg-slim-blue rounded text-xs font-mono uppercase inline-block whitespace-nowrap" key={index}>{tool}</span>
                 )
               })
               }
-            </div>
+            </p>
           )}
           {images.length > 1 || source || demo ? (
-            <div className='my-3 space-x-2'>
+            <div className='flex my-1 space-x-2'>
               {images.length == 1 ? "" : (
                 <>
-                  <a className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md" onClick={openLightbox}><FontAwesomeIcon icon={faImage} className='mr-2' /> Gallery</a>
+                  <a className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md overflow-hidden whitespace-nowrap sm:grow md:grow-0 text-center" onClick={openLightbox}><FontAwesomeIcon icon={faImage} className='mr-2' /> Gallery</a>
                   <ModalGateway>
                     {viewerIsOpen ? (
                       <Modal onClose={closeLightbox}>
@@ -291,10 +291,10 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
                 </>
               )}
               {!source ? "" : (
-                <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md"><FontAwesomeIcon icon={faGithub} className='mr-2' /> GitHub</a>
+                <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md whitespace-nowrap sm:grow md:grow-0 text-center"><FontAwesomeIcon icon={faGithub} className='mr-2' /> GitHub</a>
               )}
               {!demo ? "" : (
-                <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md"><FontAwesomeIcon icon={faSearch} className='mr-2' /> Demo</a>
+                <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md whitespace-nowrap sm:grow md:grow-0 text-center"><FontAwesomeIcon icon={faSearch} className='mr-2' /> Demo</a>
               )}
             </div>
           ) : ""}
