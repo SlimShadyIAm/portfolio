@@ -294,7 +294,7 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
                 <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md whitespace-nowrap sm:grow md:grow-0 text-center"><FontAwesomeIcon icon={faGithub} className='mr-2' /> GitHub</a>
               )}
               {!demo ? "" : (
-                <a href={source} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md whitespace-nowrap sm:grow md:grow-0 text-center"><FontAwesomeIcon icon={faSearch} className='mr-2' /> Demo</a>
+                <a href={demo} className="px-6 py-2 text-white bg-slim-blue hover:bg-blue-800 hover:text-blue-200 transition-colors hover:cursor-pointer rounded text-md whitespace-nowrap sm:grow md:grow-0 text-center"><FontAwesomeIcon icon={faSearch} className='mr-2' /> Demo</a>
               )}
             </div>
           ) : ""}
