@@ -238,6 +238,23 @@ const PreviousWork = () => {
   )
 }
 
+const buttonStyles = (base: any, state: any) => ({
+  ...base,
+  backgroundColor: 'rgba(0, 0, 0, 0.45)',
+
+  ':hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  },
+  ':active': {
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  },
+})
+
+const carouselStyles = {
+  navigationPrev: buttonStyles,
+  navigationNext: buttonStyles,
+}
+
 const Work: React.FC<Props> = ({ title, description, images, tools, source, demo }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -284,6 +301,7 @@ const Work: React.FC<Props> = ({ title, description, images, tools, source, demo
                           views={images.map(x => ({
                             source: x,
                           }))}
+                          styles={carouselStyles}
                         />
                       </Modal>
                     ) : null}
