@@ -54,11 +54,11 @@ const PreviousWork = () => {
       )
     },
     {
-      title: "Bloo (GIR)",
-      tools: ["Python", "pycord", "MongoDB"],
+      title: "GIR",
+      tools: ["Python", "Discord.py", "MongoDB"],
       type: "Discord bot",
-      description: `A Discord bot for the r/Jailbreak Discord community, a server with over 60,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.`,
-      source: "https://github.com/SlimShadyIAm/BottyMcBotface",
+      description: `A Discord bot used in many large technology related Discord servers, totalling roughly 80,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.`,
+      source: "https://github.com/DiscordGIR/GIRRewrite",
       images: importAll(
         require.context(
           "../assets/img/works/gir",
