@@ -22,11 +22,12 @@ const AboutMe = () => {
               "22 years old",
               "Pakistani born",
               "Computer Science BSc from UTwente",
-              "MSc Student at DTU in Denmark"
+              "Current MSc Student at DTU"
             ]} />
             <AboutMeEntry title="Hobbies And Interests" skills={[
               "PC building enthusiast",
-              "Hackintoshing and jailbreaking",
+              "Apple enthusiast",
+              "IoT and Homelab",
               "Online community management",
               "Privacy and security",
               "Podcasts and reading",
@@ -44,11 +45,14 @@ const AboutMe = () => {
               "Flutter",
               "HTML5 and CSS3",
               "TailwindCSS",
+              "TypeScript",
               "JavaScript",
               "NodeJS",
               "Figma",
               "Java",
+              "Docker",
               "MongoDB and SQL",
+              "Git",
               "Linux and server administration",
             ]} />
           </div>
