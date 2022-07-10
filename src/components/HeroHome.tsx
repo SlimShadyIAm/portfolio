@@ -16,7 +16,7 @@ const HeroHome = () => {
           <p className="text-2xl text-white md:text-right font-bold my-2">Designer. Developer. Dreamer.</p>
           <div className="flex flex-row space-x-2 my-4 justify-center">
             <a href="https://github.com/SlimShadyIAm" className="px-2 py-3 text-white text-2xl text-center flex-1 bg-transparent-grey rounded-md shadow-md hover:shadow-lg transition-shadow flex justify-center items-center"><FontAwesomeIcon icon={faGithub} /></a>
-            <a href="https://twitter.com/slimshadydev" className="px-2 py-3 text-white text-2xl text-center flex-1 bg-transparent-grey rounded-md shadow-md hover:shadow-lg transition-shadow flex justify-center items-center"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/optionnull" className="px-2 py-3 text-white text-2xl text-center flex-1 bg-transparent-grey rounded-md shadow-md hover:shadow-lg transition-shadow flex justify-center items-center"><FontAwesomeIcon icon={faTwitter} /></a>
             <a href="https://www.linkedin.com/in/farooqaamir" className="px-2 py-3 text-white text-2xl text-center flex-1 bg-transparent-grey rounded-md shadow-md hover:shadow-lg transition-shadow  flex justify-center items-center"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="mailto:me@aamirfarooq.dev" className="px-2 py-3 text-white text-2xl text-center flex-1 bg-transparent-grey rounded-md shadow-md hover:shadow-lg transition-shadow  flex justify-center items-center"><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
