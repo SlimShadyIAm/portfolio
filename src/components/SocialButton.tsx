@@ -1,15 +1,11 @@
-import { ReactNode } from 'react'
+import { ReactNode } from 'react';
 
 type Props = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
-const SocialButton = ({children}: Props) => {
-  return (
-    <div className="text-zinc-400/75" >
-      {children}
-    </div>
-  )
-}
+const SocialButton = ({ children }: Props) => {
+  return <div className="text-zinc-400/75">{children}</div>;
+};
 
-export default SocialButton
+export default SocialButton;
