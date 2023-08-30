@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,9 +8,16 @@ const config: Config = {
   ],
   theme: {
     container: {
-      padding: '8rem',
+      center: true,
+      padding: {
+        DEFAULT: '2rem',
+        sm: '1rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

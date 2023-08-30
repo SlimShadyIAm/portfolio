@@ -1,11 +1,11 @@
-import Intro from "@/components/Intro";
+import Intro from '@/components/Intro';
 
 const Home = () => {
   return (
-    <div className="container mx-auto pt-24 bg-zinc-900 h-full">
+    <div className="container mx-auto h-full bg-zinc-900 pt-24">
       <Intro />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
