@@ -6,7 +6,7 @@ type Props = {
 
 const SocialButton = ({ icon }: Props) => {
   return (
-    <button className="rounded-xl p-3 text-zinc-400/75 transition-all hover:bg-zinc-200/5 hover:shadow-zinc-800/5 hover:ring-2 hover:ring-white/10 hover:backdrop-blur">
+    <button className="hover:pretty-ring rounded-xl p-3 text-zinc-400/75 transition-all hover:text-zinc-200/75">
       {icon}
     </button>
   );

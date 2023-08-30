@@ -1,0 +1,9 @@
+.grid {
+  background-image: url('/images/grid.png');
+  background-repeat: no-repeat;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-position: 50% -250px;
+  background-position-x: 50%;
+  background-position-y: -200px;
+}

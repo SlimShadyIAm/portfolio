@@ -1,13 +1,17 @@
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import Image from 'next/image';
-import SocialButton from './SocialButton';
+import SocialButton from '@/components/SocialButton';
 
 const Intro = () => {
   return (
     <div className="flex flex-col gap-6">
-      <div className="shadow-zinc--700/25 self-start rounded-full border-2 border-zinc-700/25 bg-zinc-800/50 p-2 shadow-sm">
+      {/*
+      <div className="shadow-zinc-700/25 self-start rounded-full border-2 border-zinc-700/25 bg-zinc-800/50 p-2 shadow-sm">
+      */}
+
+      <div className="self-start rounded-full p-2 pretty-ring">
         <Image
-          src="/pfp.jpg"
+          src="/images/pfp.jpg"
           className="rounded-full "
           width={160}
           height={160}
