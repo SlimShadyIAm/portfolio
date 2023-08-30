@@ -4,6 +4,6 @@
 
 @layer components {
   .pretty-ring {
-    @apply bg-slate-200/5 shadow-sm shadow-slate-800/5 ring-2 ring-white/10 backdrop-blur;
+    @apply bg-slate-300/5 shadow-sm shadow-slate-800/5 ring-2 ring-white/10 backdrop-blur;
   }
 }
