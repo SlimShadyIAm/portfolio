@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { CakeSlice, Github, Linkedin, Mail, Map, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import SocialButton from '@/components/SocialButton';
+import IntroBadge from '../IntroBadge';
 
 const Intro = () => {
   return (
@@ -9,7 +10,7 @@ const Intro = () => {
       <div className="shadow-zinc-700/25 self-start rounded-full border-2 border-zinc-700/25 bg-zinc-800/50 p-2 shadow-sm">
       */}
 
-      <div className="self-start rounded-full p-2 pretty-ring">
+      <div className="pretty-ring self-start rounded-full p-2">
         <Image
           src="/images/pfp.jpg"
           className="rounded-full "
@@ -29,7 +30,7 @@ const Intro = () => {
             <h2 className="z-10 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text leading-tight text-transparent">
               <span className="font-extrabold">Dreamer.</span>
             </h2>
-            <h2 className="z-negative-1 absolute top-0 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text leading-tight text-transparent blur-md">
+            <h2 className="z-negative-1 absolute top-0 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text leading-tight text-transparent blur-lg">
               <span className="font-extrabold">Dreamer.</span>
             </h2>
           </div>
@@ -40,11 +41,15 @@ const Intro = () => {
           want to use. Challenging design tasks are my bread and butter.
         </p>
       </div>
+      <div className="mb-[-8px] flex gap-3">
+        <IntroBadge icon={CakeSlice} text="23" />
+        <IntroBadge icon={Map} text="Copenhagen, Denmark" />
+      </div>
       <div className="flex gap-6">
-        <SocialButton icon={<Github />} />
-        <SocialButton icon={<Twitter />} />
-        <SocialButton icon={<Linkedin />} />
-        <SocialButton icon={<Mail />} />
+        <SocialButton icon={Github} />
+        <SocialButton icon={Twitter} />
+        <SocialButton icon={Linkedin} />
+        <SocialButton icon={Mail} />
       </div>
     </div>
   );
