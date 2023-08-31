@@ -1,14 +1,14 @@
 import { CakeSlice, Github, Linkedin, Mail, Map, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import SocialButton from '@/components/SocialButton';
-import IntroBadge from '../IntroBadge';
+import IntroBadge from './IntroBadge';
 
 const Intro = () => {
   return (
     <div className="flex flex-col gap-6">
       <div className="relative self-start">
-        <div className="rounded-full p-2 flex items-center justify-center">
-          <div className="z-0 absolute top-0 w-[140px] h-[140px] bg-indigo-500 blur-[120px] mt-[16px]" />
+        <div className="flex items-center justify-center rounded-full p-2">
+          <div className="absolute top-0 z-0 mt-[16px] h-[140px] w-[140px] bg-indigo-500 blur-[120px]" />
           <Image
             src="/images/pfp-blur.png"
             className="z-10 rounded-full"
