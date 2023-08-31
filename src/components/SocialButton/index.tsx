@@ -2,13 +2,14 @@ import { LucideIcon } from 'lucide-react';
 
 type Props = {
   icon: LucideIcon;
+  url: string;
 };
 
-const SocialButton = ({ icon: Icon }: Props) => {
+const SocialButton = ({ url, icon: Icon }: Props) => {
   return (
-    <button className="hover:pretty-ring rounded-xl p-3 text-slate-400/75 transition-all hover:text-slate-200/75">
+    <a href={url} target="_blank" className="hover:pretty-ring rounded-xl p-3 text-slate-400/75 transition-all hover:text-slate-200/75">
       <Icon />
-    </button>
+    </a>
   );
 };
 

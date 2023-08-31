@@ -8,7 +8,7 @@ const Intro = () => {
     <div className="flex flex-col gap-6">
       <div className="relative self-start">
         <div className="flex items-center justify-center rounded-full p-2">
-          <div className="absolute top-0 z-0 mt-[16px] h-[140px] w-[140px] bg-indigo-500 blur-[120px]" />
+          <div className="absolute top-0 z-0 mt-[16px] h-[120px] w-[120px] bg-indigo-500 blur-[100px]" />
           <Image
             src="/images/pfp-blur.png"
             className="z-10 rounded-full"
