@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ height: '100%' }}>
-      <body className={`flex ${inter.className} h-full bg-black`}>
+      <body className={`flex ${inter.className} min-h-full bg-black`}>
         {children}
       </body>
     </html>
