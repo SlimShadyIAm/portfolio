@@ -28,7 +28,7 @@ const Skills = () => {
         <Sparkles className="fill-slate-600/75 text-sm text-slate-400/75" />
         <h2 className="font-medium text-slate-200/90">Skills</h2>
       </div>
-      <div className="flex flex-wrap gap-2 p-1">
+      <div className="flex flex-wrap gap-3 p-1">
         {skills.map((skill) => (
           <SkillBadge key={skill} name={skill} />
         ))}
