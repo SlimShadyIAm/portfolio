@@ -5,11 +5,7 @@ import OverviewCard from '../OverviewCard';
 
 const Education = () => {
   return (
-    <OverviewCard>
-      <div className="align-center mb-6 flex flex-row gap-4 self-start">
-        <Briefcase className="fill-slate-600/75 text-sm text-slate-400/75" />
-        <h2 className="font-medium text-slate-200/90">Education</h2>
-      </div>
+    <OverviewCard icon={Briefcase} title="Education">
       <EducationItem
         src="/images/dtu.svg"
         alt="DTU Logo"

@@ -1,6 +1,7 @@
 import Intro from '@/components/Intro';
 import styles from './styles.module.css';
 import Overview from '@/components/Overview';
+import Projects from '@/components/Projects';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="container flex flex-col items-start gap-24">
         <Intro />
         <Overview />
+        <Projects />
       </div>
     </div>
   );
