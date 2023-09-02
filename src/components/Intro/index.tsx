@@ -42,10 +42,10 @@ const Intro = () => {
         <IntroBadge icon={Map} text="Copenhagen, Denmark" />
       </div>
       <div className="flex gap-6">
-        <SocialButton icon={Github} />
-        <SocialButton icon={Twitter} />
-        <SocialButton icon={Linkedin} />
-        <SocialButton icon={Mail} />
+        <SocialButton icon={Github} url='https://github.com/SlimShadyIAm' />
+        <SocialButton icon={Twitter} url='https://twitter.com/slimshadydev'/>
+        <SocialButton icon={Linkedin} url='https://www.linkedin.com/in/farooqaamir/'/>
+        <SocialButton icon={Mail} url='mailto:me@aamirfarooq.dev' />
       </div>
     </div>
   );
