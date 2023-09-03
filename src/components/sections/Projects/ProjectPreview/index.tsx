@@ -13,7 +13,7 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
         src={project.displayImage}
         className="z-10 w-[45%] self-center rounded-lg"
       />
-      <div className="flex h-full w-full flex-col gap-1 p-4">
+      <div className="flex h-full w-full flex-col gap-1 p-4 justify-center">
         <h2 className="text-xl font-medium text-slate-200">{project.title}</h2>
         <p className="text-md mb-4 text-slate-400">{project.brief}</p>
         <div className="mb-4 flex flex-row flex-wrap gap-4">
