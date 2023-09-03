@@ -1,7 +1,7 @@
-import Intro from '@/components/Intro';
+import Intro from '@/components/sections/Intro';
 import styles from './styles.module.css';
-import Overview from '@/components/Overview';
-import Projects from '@/components/Projects';
+import Overview from '@/components/sections/Overview';
+import Projects from '@/components/sections/Projects';
 
 const Home = () => {
   return (

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ProjectPreview from './ProjectPreview';
 import ProjectDialog from './ProjectDialog';
 import { ProjectData, projects } from './projectData';
+import HeaderText from '@/components/HeaderText';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<
@@ -13,7 +14,7 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 className="text-3xl font-semibold text-slate-200">Projects</h1>;
+      <HeaderText>Projects</HeaderText>
       <ProjectDialog project={selectedProject} closeModal={closeModal} />
       <div className="flex gap-4">
         {projects.map((project) => (

@@ -1,7 +1,7 @@
 import { CakeSlice, Github, Linkedin, Mail, Map, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import SocialButton from '@/components/SocialButton';
-import IntroBadge from './IntroBadge';
+import IntroBadge from '@/components/IntroBadge';
 
 const Intro = () => {
   return (

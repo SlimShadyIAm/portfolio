@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
-import SkillBadge from './SkillBadge';
-import OverviewCard from '../OverviewCard';
+import SkillBadge from '@/components/SkillBadge';
+import OverviewCard from '@/components/OverviewCard';
 
 const Skills = () => {
   const skills = [

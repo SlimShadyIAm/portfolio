@@ -1,7 +1,7 @@
 import React from 'react';
 import EducationItem from './EducationItem';
 import { Briefcase } from 'lucide-react';
-import OverviewCard from '../OverviewCard';
+import OverviewCard from '@/components/OverviewCard';
 
 const Education = () => {
   return (

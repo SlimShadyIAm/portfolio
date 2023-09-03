@@ -6,4 +6,8 @@
   .pretty-ring {
     @apply bg-slate-300/5 shadow-sm shadow-slate-800/5 ring-2 ring-white/10 backdrop-blur;
   }
+
+  .project-button {
+    @apply hover:pretty-ring flex flex-row gap-2 self-start rounded-md px-3 py-2 font-medium ring transition-colors;
+  }
 }
