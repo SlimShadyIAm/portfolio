@@ -13,7 +13,7 @@ const Projects = () => {
   const closeModal = () => setSelectedProject(undefined);
 
   return (
-    <div className='mt-16'>
+    <div className='mt-12'>
       <HeaderText>Projects</HeaderText>
       <ProjectDialog project={selectedProject} closeModal={closeModal} />
       <div className="flex gap-4">
