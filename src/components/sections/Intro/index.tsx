@@ -5,7 +5,7 @@ import IntroBadge from '@/components/IntroBadge';
 
 const Intro = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 mb-24">
       <div className="relative self-start">
         <div className="flex items-center justify-center rounded-full p-2">
           <div className="absolute top-0 z-0 mt-[16px] h-[120px] w-[120px] bg-indigo-500 blur-[100px]" />

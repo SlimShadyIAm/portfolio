@@ -1,11 +1,11 @@
 import React from 'react';
 import EducationItem from './EducationItem';
-import { Briefcase } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import OverviewCard from '@/components/OverviewCard';
 
 const Education = () => {
   return (
-    <OverviewCard icon={Briefcase} title="Education">
+    <OverviewCard icon={GraduationCap} title="Education">
       <EducationItem
         src="/images/dtu.svg"
         alt="DTU Logo"
