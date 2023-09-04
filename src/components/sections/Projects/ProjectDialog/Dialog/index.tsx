@@ -7,10 +7,9 @@ type ProjectDialogProps = {
   show: boolean;
   children: ReactNode;
   closeModal: () => void;
-  title: string;
 };
 
-const Dialog = ({ children, show, closeModal, title }: ProjectDialogProps) => {
+const Dialog = ({ children, show, closeModal }: ProjectDialogProps) => {
   return (
     <Transition appear show={show} as={Fragment}>
       <HeadlessDialog as="div" className="relative z-10" onClose={closeModal}>
@@ -37,22 +36,16 @@ const Dialog = ({ children, show, closeModal, title }: ProjectDialogProps) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <HeadlessDialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-slate-950 p-6 text-left align-middle shadow-xl transition-all">
-                <HeadlessDialog.Title
-                  as="h3"
-                  className="mt-2 text-lg font-medium leading-6 text-slate-200"
-                >
-                  {title}
-                </HeadlessDialog.Title>
+              <HeadlessDialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                 {children}
 
-                <div className="mt-4">
+                <div className="mt-8 flex justify-center">
                   <button
                     type="button"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    className="inline-flex justify-center rounded-md border border-transparent bg-slate-200 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                     onClick={closeModal}
                   >
-                    Got it, thanks!
+                    Close
                   </button>
                 </div>
               </HeadlessDialog.Panel>

@@ -7,6 +7,12 @@ export interface ProjectData {
   demoImages?: string[];
   github?: string[];
   demo?: string;
+  links: Link[];
+}
+
+interface Link {
+  text: string;
+  url: string;
 }
 
 export const projects: ProjectData[] = [
@@ -17,14 +23,24 @@ export const projects: ProjectData[] = [
     description: `This was my Bachelor graduation design project. It was a dashboard created for Esports Team Twente, our university's Esports team, who wanted a centralized dashboard where you could upload replay files from game, run them through a data analysis pipeline, and store and display statistics from matches. We created the frontend, backend, API and database implementation to solve their use case.`,
     displayImage: 'ett.png',
     skills: ['React', 'TypeScript', 'MaterialUI', 'SWR'],
+    links: [
+      {
+        text: 'Esports Team Twente',
+        url: 'https://esportsteamtwente.nl',
+      },
+      {
+        text: 'Project report',
+        url: 'https://bachelorshowcase-eemcs.apps.utwente.nl/content/O4z9FENJ/design_report_group2_final.pdf',
+      },
+    ],
     demoImages: [
-     'ett-dashboard/02.png',
-     'ett-dashboard/03.png',
-     'ett-dashboard/04.png',
-     'ett-dashboard/05.png',
-     'ett-dashboard/06.png',
-     'ett-dashboard/07.png',
-     'ett-dashboard/08.png',
-    ]
+      'ett-dashboard/02.png',
+      'ett-dashboard/03.png',
+      'ett-dashboard/04.png',
+      'ett-dashboard/05.png',
+      'ett-dashboard/06.png',
+      'ett-dashboard/07.png',
+      'ett-dashboard/08.png',
+    ],
   },
 ];
