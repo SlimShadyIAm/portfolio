@@ -29,16 +29,6 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
               Visit demo
             </a>
           )}
-          {project.github && (
-            <a
-              className="pretty-ring flex flex-row gap-3 self-start rounded-md bg-slate-200 px-4 py-2 font-medium text-slate-900 transition-colors hover:bg-slate-300"
-              onClick={setSelectedProject}
-              href={project.demo}
-            >
-              <Github />
-              Code
-            </a>
-          )}
           <button
             className="project-button text-slate-300/75 ring ring-slate-900 hover:bg-slate-600/10 hover:text-slate-100/75"
             onClick={setSelectedProject}

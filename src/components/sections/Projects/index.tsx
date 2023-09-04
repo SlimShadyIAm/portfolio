@@ -13,15 +13,22 @@ const Projects = () => {
   const closeModal = () => setSelectedProject(undefined);
 
   return (
-    <div className='mt-12'>
+    <div className="mt-12">
       <HeaderText>Projects</HeaderText>
       <ProjectDialog project={selectedProject} closeModal={closeModal} />
-      <div className="flex gap-4">
-        {projects.map((project) => (
-          <ProjectPreview
-            setSelectedProject={() => setSelectedProject(project)}
-            project={project}
-          />
+      <div className="flex flex-col gap-8">
+        {projects.map((project, i) => (
+          <>
+            <ProjectPreview
+              setSelectedProject={() => setSelectedProject(project)}
+              project={project}
+            />
+            {i < projects.length - 1 && (
+              <div className="relative h-[1px] w-32 self-center bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 flex justify-center">
+                <div className="absolute top-0 h-1 w-16 bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 blur-md" />
+              </div>
+            )}
+          </>
         ))}
       </div>
     </div>

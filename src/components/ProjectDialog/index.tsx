@@ -29,6 +29,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
               width={1000}
               height={530}
               alt="Project display image"
+              className='rounded-lg'
             />
           )}
         </div>
@@ -40,16 +41,16 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
         </HeadlessDialog.Title>
         <div className="mt-2 flex flex-1 flex-col gap-2">
           <div className="flex">
-            <div className="flex flex-[0.33] flex-col gap-2">
+            <div className="flex flex-[0.33] flex-col gap-2 w-full">
               {(project.demo || project.github) && (
-                <div className="flex w-full flex-row items-center gap-2 text-slate-300">
+                <div className="flex w-full flex-row justify-center gap-2 text-slate-300">
                   {project.github && (
-                    <a href={project.github} target="_blank">
+                    <a href={project.github} target="_blank" className='hover:pretty-ring rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75 mt-1'>
                       <Github className="fill-slate-600/75 text-slate-400/75" />
                     </a>
                   )}
                   {project.demo && (
-                    <a href={project.demo} target="_blank">
+                    <a href={project.demo} target="_blank" className='hover:pretty-ring rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75 mt-1'>
                       <Globe2 className="fill-slate-600/75 text-slate-400/75" />
                     </a>
                   )}

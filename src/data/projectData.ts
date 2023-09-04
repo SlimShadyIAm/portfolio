@@ -43,4 +43,28 @@ export const projects: ProjectData[] = [
       'ett-dashboard/08.png',
     ],
   },
+  {
+    title: 'There Is More Than One Way To Zen Your Python',
+    brief:
+      'My published Bachelor thesis examines "pythonicity" and "pythonic idioms," exploring what constitutes good Python code through a literature review, analysis of open source code, and observations on idiom trends.',
+    description:
+      'Beginning as my Bachelor thesis project, it was then partially rewritten and submitted to SPLASH conference on Software Language Engineering, and subsequently accepted for publication. This paper explores the concept of "pythonicity" and the so-called "pythonic-idioms" — in other words, what makes good Python code good. We conducted a literature review, detected uses of the idioms in open source code, and commented on idiom usage trends over time. One of the products of this research is my Pythonic idiom catalog.',
+    skills: ['Python', 'Kotlin', 'Literature review'],
+    github: 'https://github.com/SlimShadyIAm/DetectYourZen',
+    displayImage: 'zen-your-python/01.png',
+    links: [
+      {
+        text: 'Published paper',
+        url: 'https://dl.acm.org/doi/10.1145/3486608.3486909'
+      },
+      {
+        text: 'Idiom catalog',
+        url: 'https://slimshadyiam.github.io/ZenYourPython/',
+      },
+      {
+        text: 'My thesis',
+        url: 'http://essay.utwente.nl/86873/1/Farooq_BA_EEMCS.pdf'
+      }
+    ],
+  },
 ];
