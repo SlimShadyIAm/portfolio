@@ -55,7 +55,7 @@ export const projects: ProjectData[] = [
     links: [
       {
         text: 'Published paper',
-        url: 'https://dl.acm.org/doi/10.1145/3486608.3486909'
+        url: 'https://dl.acm.org/doi/10.1145/3486608.3486909',
       },
       {
         text: 'Idiom catalog',
@@ -63,8 +63,18 @@ export const projects: ProjectData[] = [
       },
       {
         text: 'My thesis',
-        url: 'http://essay.utwente.nl/86873/1/Farooq_BA_EEMCS.pdf'
-      }
+        url: 'http://essay.utwente.nl/86873/1/Farooq_BA_EEMCS.pdf',
+      },
     ],
+  },
+  {
+    title: 'GIR',
+    brief:
+      'My biggest open-source project, a Discord bot which is widely used in several technology-related servers, providing moderation commands, message filtering, an XP system, and other useful utilities for users and moderators.',
+    description:
+      'A Discord bot used in many large technology related Discord servers, totalling roughly 80,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.',
+    skills: ['Python', 'MongoDB', 'Discord.py', 'REST APIs'],
+    displayImage: 'gir/image0.png',
+    github: 'https://github.com/DiscordGIR/GIRRewrite',
   },
 ];

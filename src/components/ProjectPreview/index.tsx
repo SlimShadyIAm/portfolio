@@ -10,11 +10,13 @@ type Props = {
 const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
     <div className="flex flex-row gap-2">
-      <img
-        src={`/images/projects/${project.displayImage}`}
-        className="z-10 w-[45%] self-center rounded-lg"
-      />
-      <div className="flex h-full w-full flex-col justify-center gap-1 p-4">
+      <div className='flex-[0.4] flex justify-center items-center'>
+        <img
+          src={`/images/projects/${project.displayImage}`}
+          className="z-10 max-w-full max-h-full h-52 rounded-lg"
+        />
+      </div>
+      <div className="flex h-full w-full flex-[0.6] flex-col justify-center gap-1 p-4">
         <h2 className="text-xl font-medium text-slate-200">{project.title}</h2>
         <p className="text-md mb-4 text-slate-400">{project.brief}</p>
         <ProjectSkillBadges skills={project.skills} />

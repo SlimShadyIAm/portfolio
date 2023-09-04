@@ -20,7 +20,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
   return (
     <Dialog closeModal={closeModal} show={!!project}>
       <div className="flex flex-col gap-2">
-        <div className="flex-1 rounded-lg">
+        <div className="flex flex-1 items-center rounded-lg flex-col">
           {project.demoImages ? (
             <Carousel images={project.demoImages} />
           ) : (
@@ -29,7 +29,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
               width={1000}
               height={530}
               alt="Project display image"
-              className='rounded-lg'
+              className="h-96 max-h-96 w-auto max-w-full rounded-lg"
             />
           )}
         </div>
@@ -41,16 +41,24 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
         </HeadlessDialog.Title>
         <div className="mt-2 flex flex-1 flex-col gap-2">
           <div className="flex">
-            <div className="flex flex-[0.33] flex-col gap-2 w-full">
+            <div className="flex w-full flex-[0.33] flex-col gap-2">
               {(project.demo || project.github) && (
                 <div className="flex w-full flex-row justify-center gap-2 text-slate-300">
                   {project.github && (
-                    <a href={project.github} target="_blank" className='hover:pretty-ring rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75 mt-1'>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="hover:pretty-ring mt-1 rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75"
+                    >
                       <Github className="fill-slate-600/75 text-slate-400/75" />
                     </a>
                   )}
                   {project.demo && (
-                    <a href={project.demo} target="_blank" className='hover:pretty-ring rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75 mt-1'>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="hover:pretty-ring mt-1 rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75"
+                    >
                       <Globe2 className="fill-slate-600/75 text-slate-400/75" />
                     </a>
                   )}
