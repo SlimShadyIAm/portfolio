@@ -10,7 +10,7 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
     <div className="flex flex-row gap-2">
       <img
-        src={project.displayImage}
+        src={`/images/projects/covers/${project.displayImage}`}
         className="z-10 w-[45%] self-center rounded-lg"
       />
       <div className="flex h-full w-full flex-col gap-1 p-4 justify-center">

@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { ProjectData } from '../projectData';
 import Image from 'next/image';
+import Carousel from '@/components/Carousel';
 
 type ProjectDialogProps = {
   project?: ProjectData;
@@ -48,7 +49,16 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
                 </Dialog.Title>
                 <div className="mt-2 flex flex-col gap-2">
                   <div className="flex-1 rounded-lg bg-slate-200">
-                    <Image className="rounded-lg" src={project.displayImage} width={1000} height={530} alt="Project image"/>
+                    {project.demoImages ? (
+                      <Carousel images={project.demoImages} />
+                    ) : (
+                      <Image
+                        src={`images/projects/covers/${project.displayImage}`}
+                        width={1000}
+                        height={530}
+                        alt="Project display image"
+                      />
+                    )}
                   </div>
                   <div className="flex-1">
                     <p className="text-sm text-gray-500">
