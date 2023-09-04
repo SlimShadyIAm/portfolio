@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import ProjectPreview from './ProjectPreview';
-import ProjectDialog from './ProjectDialog';
-import { ProjectData, projects } from './projectData';
+import ProjectPreview from '@/components/ProjectPreview';
+import ProjectDialog from '@/components/ProjectDialog';
+import { ProjectData, projects } from '@/data/projectData';
 import HeaderText from '@/components/HeaderText';
 
 const Projects = () => {

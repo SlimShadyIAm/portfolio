@@ -1,12 +1,13 @@
 'use client';
 
-import { ProjectData } from '../projectData';
+import { ProjectData } from '@/data/projectData';
 import Image from 'next/image';
 import Carousel from '@/components/Carousel';
 import Dialog from './Dialog';
 import { Dialog as HeadlessDialog } from '@headlessui/react';
 import DialogSection from './DialogSection';
-import { Link } from 'lucide-react';
+import { Github, Globe2, Link } from 'lucide-react';
+import ProjectSkillBadges from '@/components/ProjectSkillBadges';
 
 type ProjectDialogProps = {
   project?: ProjectData;
@@ -24,7 +25,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
             <Carousel images={project.demoImages} />
           ) : (
             <Image
-              src={`images/projects/covers/${project.displayImage}`}
+              src={`/images/projects/${project.displayImage}`}
               width={1000}
               height={530}
               alt="Project display image"
@@ -39,15 +40,34 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
         </HeadlessDialog.Title>
         <div className="mt-2 flex flex-1 flex-col gap-2">
           <div className="flex">
-            <div className="flex-[0.33]">
+            <div className="flex flex-[0.33] flex-col gap-2">
+              {(project.demo || project.github) && (
+                <div className="flex w-full flex-row items-center gap-2 text-slate-300">
+                  {project.github && (
+                    <a href={project.github} target="_blank">
+                      <Github className="fill-slate-600/75 text-slate-400/75" />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a href={project.demo} target="_blank">
+                      <Globe2 className="fill-slate-600/75 text-slate-400/75" />
+                    </a>
+                  )}
+                </div>
+              )}
+              {project.skills && (
+                <DialogSection title="Skills Used">
+                  <ProjectSkillBadges skills={project.skills} />
+                </DialogSection>
+              )}
               {project.links && (
-                <DialogSection title="links">
+                <DialogSection title="Links">
                   {project.links.map((link) => (
                     <a
                       href={link.url}
-                      className="flex flex-row items-center gap-2 text-slate-300 text-sm"
+                      className="flex flex-row items-center gap-2 text-sm text-indigo-300 transition-colors hover:text-indigo-500"
                     >
-                      <Link className='text-xs' />
+                      <Link size={16} />
                       {link.text}
                     </a>
                   ))}

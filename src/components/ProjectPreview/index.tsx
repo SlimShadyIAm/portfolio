@@ -1,5 +1,6 @@
 import { Expand, Github, Link } from 'lucide-react';
-import { ProjectData } from '../projectData';
+import { ProjectData } from '@/data/projectData';
+import ProjectSkillBadges from '@/components/ProjectSkillBadges';
 
 type Props = {
   project: ProjectData;
@@ -10,17 +11,13 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
     <div className="flex flex-row gap-2">
       <img
-        src={`/images/projects/covers/${project.displayImage}`}
+        src={`/images/projects/${project.displayImage}`}
         className="z-10 w-[45%] self-center rounded-lg"
       />
-      <div className="flex h-full w-full flex-col gap-1 p-4 justify-center">
+      <div className="flex h-full w-full flex-col justify-center gap-1 p-4">
         <h2 className="text-xl font-medium text-slate-200">{project.title}</h2>
         <p className="text-md mb-4 text-slate-400">{project.brief}</p>
-        <div className="mb-4 flex flex-row flex-wrap gap-4">
-          {project.skills.map((skill) => (
-            <p className="text-xs uppercase text-slate-300/90">{skill}</p>
-          ))}
-        </div>
+        <ProjectSkillBadges skills={project.skills} />
         <div className="flex flex-row gap-4 justify-self-end">
           {project.demo && (
             <a

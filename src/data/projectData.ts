@@ -5,9 +5,9 @@ export interface ProjectData {
   skills: string[];
   displayImage: string;
   demoImages?: string[];
-  github?: string[];
+  github?: string;
   demo?: string;
-  links: Link[];
+  links?: Link[];
 }
 
 interface Link {
@@ -21,7 +21,7 @@ export const projects: ProjectData[] = [
     brief:
       "My bachelor project: a dashboard for my university's Esports team, allowing them to upload and analyze replay files from games and display match statistics.",
     description: `This was my Bachelor graduation design project. It was a dashboard created for Esports Team Twente, our university's Esports team, who wanted a centralized dashboard where you could upload replay files from game, run them through a data analysis pipeline, and store and display statistics from matches. We created the frontend, backend, API and database implementation to solve their use case.`,
-    displayImage: 'ett.png',
+    displayImage: 'ett-dashboard/01.png',
     skills: ['React', 'TypeScript', 'MaterialUI', 'SWR'],
     links: [
       {
