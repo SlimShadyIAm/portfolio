@@ -25,7 +25,7 @@ const Projects = () => {
             />
             {i < projects.length - 1 && (
               <div className="relative flex h-[1px] w-48 justify-center self-center bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950">
-                <div className="absolute top-0 h-1 w-24 bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 blur-md" />
+                <div className="absolute top-0 h-[4px] w-24 bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 blur-md" />
               </div>
             )}
           </>
