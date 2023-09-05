@@ -20,7 +20,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
   return (
     <Dialog closeModal={closeModal} show={!!project}>
       <div className="flex flex-col gap-2">
-        <div className="flex flex-1 items-center rounded-lg flex-col">
+        <div className="flex flex-1 flex-col items-center rounded-lg">
           {project.demoImages ? (
             <Carousel images={project.demoImages} />
           ) : (
@@ -35,35 +35,16 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
         </div>
         <HeadlessDialog.Title
           as="h3"
-          className="my-2 text-lg font-medium leading-6 text-slate-200"
+          className="my-2 text-xl font-medium leading-6 text-slate-200"
         >
           {project.title}
         </HeadlessDialog.Title>
-        <div className="mt-2 flex flex-1 flex-col gap-2">
+        <div className="flex flex-1 flex-col gap-2">
           <div className="flex">
             <div className="flex w-full flex-[0.33] flex-col gap-2">
-              {(project.demo || project.github) && (
-                <div className="flex w-full flex-row justify-center gap-2 text-slate-300">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      className="hover:pretty-ring mt-1 rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75"
-                    >
-                      <Github className="fill-slate-600/75 text-slate-400/75" />
-                    </a>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      className="hover:pretty-ring mt-1 rounded-xl p-2 text-slate-400/75 transition-all hover:text-slate-200/75"
-                    >
-                      <Globe2 className="fill-slate-600/75 text-slate-400/75" />
-                    </a>
-                  )}
-                </div>
-              )}
+              <DialogSection title="Category">
+                <ProjectSkillBadges skills={[project.category]} />
+              </DialogSection>
               {project.skills && (
                 <DialogSection title="Skills Used">
                   <ProjectSkillBadges skills={project.skills} />

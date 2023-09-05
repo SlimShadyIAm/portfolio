@@ -10,4 +10,11 @@
   .project-button {
     @apply hover:pretty-ring flex flex-row gap-2 self-start rounded-md px-3 py-2 font-medium ring transition-colors;
   }
+  .tooltip {
+    @apply invisible absolute;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50;
+  }
 }
