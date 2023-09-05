@@ -54,7 +54,9 @@ const Carousel = ({ images }: Props) => {
         />
         {images.map((img, i) => (
           <div className="w-full justify-center flex-shrink-0 flex" key={img} ref={refs[i]}>
-            <img
+            <Image
+              priority
+              quality={50}
               src={`/images/projects/${img}`}
               className="mb-2 h-96 max-h-96 w-auto max-w-full rounded-lg"
               alt="Demo demo image"
