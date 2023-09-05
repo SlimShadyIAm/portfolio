@@ -4,6 +4,7 @@ export interface ProjectData {
   category: string;
   description: string;
   skills: string[];
+  softSkills?: string[];
   displayImage: string;
   demoImages?: string[];
   links?: Link[];
@@ -22,7 +23,14 @@ export const projects: ProjectData[] = [
     category: 'Web app',
     description: `This was my Bachelor graduation design project. It was a dashboard created for Esports Team Twente, our university's Esports team, who wanted a centralized dashboard where you could upload replay files from game, run them through a data analysis pipeline, and store and display statistics from matches. We created the frontend, backend, API and database implementation to solve their use case.`,
     displayImage: 'ett-dashboard/01.png',
-    skills: ['React', 'TypeScript', 'MaterialUI', 'SWR'],
+    skills: [
+      'React',
+      'TypeScript',
+      'MaterialUI',
+      'SWR',
+      'UX Testing Methodology',
+      'Scrum',
+    ],
     links: [
       {
         text: 'Esports Team Twente',
@@ -73,17 +81,25 @@ export const projects: ProjectData[] = [
   },
   {
     title: 'Reading The Reader',
-    brief: 'My master\'s thesis project, which I am currently working on, is a research project that will attempt to help people suffering from central vision loss improve their reading',
+    brief:
+      "My master's thesis project, which I am currently working on, is a research project that will attempt to help people suffering from central vision loss improve their reading",
     category: 'Research',
-    description: 'In this project, we are designing an interface that will help people suffering from central vision loss improve their reading performance by making fine-grained adjustments the text presentation style. We will perform user studies to test this interface with readers. In future, this will integrate with an eye-tracking device and AI to help predict adjustments to text presentation styles that based on the user\'s reading patterns to help improve reading performance.',
-    skills: ['Figma', 'React', 'Requirements engineering', 'UX Testing Methodology', 'Project management'],
+    description:
+      "In this project, we are designing an interface that will help people suffering from central vision loss improve their reading performance by making fine-grained adjustments the text presentation style. We will perform user studies to test this interface with readers. In future, this will integrate with an eye-tracking device and AI to help predict adjustments to text presentation styles that based on the user's reading patterns to help improve reading performance.",
+    skills: [
+      'Figma',
+      'React',
+      'Requirements engineering',
+      'UX Testing Methodology',
+      'Project management',
+    ],
     displayImage: 'reading-the-reader/image0.jpg',
     links: [
       {
         text: 'Project overview',
-        url: 'https://www.compute.dtu.dk/english/news/2023/01/artificial-intelligence-will-help-people-with-impaired-vision-to-read-better'
-      }
-    ]
+        url: 'https://www.compute.dtu.dk/english/news/2023/01/artificial-intelligence-will-help-people-with-impaired-vision-to-read-better',
+      },
+    ],
   },
   {
     title: 'GIR (Discord bot)',
@@ -91,13 +107,42 @@ export const projects: ProjectData[] = [
       'My biggest open-source project, a Discord bot which is widely used in several technology-related servers, providing moderation commands, message filtering, an XP system, and other useful utilities for users and moderators.',
     category: 'Open source software',
     description:
-      'An open-source Discord bot used in many large technology related Discord servers, totalling roughly 80,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.',
+      'An open-source Discord bot used in many large technology related Discord servers, totalling over 100,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.',
     skills: ['Python', 'MongoDB', 'Discord.py', 'REST APIs', 'Docker'],
     displayImage: 'gir/image0.png',
     links: [
       {
         text: 'GitHub',
         url: 'https://github.com/DiscordGIR/GIRRewrite',
+      },
+    ],
+  },
+  {
+    title: 'EZ-Sign',
+    brief:
+      'Human-Computer Interaction course project, which was designed as a hi-fi prototype to help translate sign language into English',
+    category: 'Hi-Fi Prototype',
+    description:
+      "This web app, created as a high fidelity proof of concept for a human-computer interaction course, serves as a non-functional prototype designed to facilitate communication between sign language users and non-sign language users through a smart sign language translation app utilizing the phone's camera.",
+    skills: ['VueJS', 'Figma', 'Bulma', 'UX Testing Methodology'],
+    displayImage: 'ezsign/0.png',
+    demoImages: [
+      'ezsign/1.png',
+      'ezsign/2.png',
+      'ezsign/4.png',
+      'ezsign/5.png',
+      'ezsign/6.png',
+      'ezsign/7.png',
+      'ezsign/8.png',
+    ],
+    links: [
+      {
+        text: 'GitHub',
+        url: 'https://github.com/SlimShadyIAm/ezsign',
+      },
+      {
+        text: 'Demo',
+        url: 'https://ezsign.slim.rocks',
       },
     ],
   },

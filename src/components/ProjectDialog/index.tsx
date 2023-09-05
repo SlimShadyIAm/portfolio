@@ -29,7 +29,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
               width={1000}
               height={530}
               alt="Project display image"
-              className="h-96 max-h-96 w-auto max-w-full rounded-lg"
+              className="h-96 max-h-96 w-auto max-w-full rounded-lg mb-2"
             />
           )}
         </div>

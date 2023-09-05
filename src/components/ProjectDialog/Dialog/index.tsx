@@ -38,16 +38,6 @@ const Dialog = ({ children, show, closeModal }: ProjectDialogProps) => {
             >
               <HeadlessDialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                 {children}
-
-                <div className="mt-8 flex justify-center">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-slate-200 px-4 py-2 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-300/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                    onClick={closeModal}
-                  >
-                    Close
-                  </button>
-                </div>
               </HeadlessDialog.Panel>
             </Transition.Child>
           </div>
