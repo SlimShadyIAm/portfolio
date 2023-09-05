@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <OverviewCard icon={GraduationCap} title="Education">
       <EducationItem
-        src="/images/dtu.svg"
+        src="/images/logos/dtu.svg"
         alt="DTU Logo"
         title="Technical University of Denmark"
         location="Copenhagen, Denmark"
@@ -16,7 +16,7 @@ const Education = () => {
       />
       <EducationItem
         last
-        src="/images/twente.svg"
+        src="/images/logos/twente.svg"
         alt="UT Logo"
         title="University of Twente"
         location="Enschede, The Netherlands"

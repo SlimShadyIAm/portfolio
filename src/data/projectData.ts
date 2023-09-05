@@ -93,7 +93,7 @@ export const projects: ProjectData[] = [
       'UX Testing Methodology',
       'Project management',
     ],
-    displayImage: 'reading-the-reader/image0.jpg',
+    displayImage: 'reading-the-reader/image0.jpeg',
     links: [
       {
         text: 'Project overview',

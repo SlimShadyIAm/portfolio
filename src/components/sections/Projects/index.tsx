@@ -14,7 +14,7 @@ const Projects = () => {
 
   return (
     <div className="mt-12">
-      <HeaderText>Projects</HeaderText>
+      <HeaderText>Past work</HeaderText>
       <ProjectDialog project={selectedProject} closeModal={closeModal} />
       <div className="flex flex-col gap-8">
         {projects.map((project, i) => (
