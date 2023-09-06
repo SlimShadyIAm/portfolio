@@ -22,7 +22,7 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
         </p>
         <h2 className="text-xl font-medium text-slate-200">{project.title}</h2>
         <p className="text-md mb-4 text-slate-400">{project.brief}</p>
-        <ProjectSkillBadges skills={project.skills} />
+        <ProjectSkillBadges skills={project.tools} />
         <div className="flex flex-row gap-4 justify-self-end">
           <button
             className="mt-4 flex items-center gap-2 rounded-md bg-slate-900 px-3 py-2 text-sm text-slate-300/75 ring ring-slate-800 transition-colors hover:bg-slate-600/30 hover:text-slate-100/75"

@@ -40,14 +40,19 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
           {project.title}
         </HeadlessDialog.Title>
         <div className="flex flex-1 flex-col gap-2">
-          <div className="flex">
-            <div className="flex w-full flex-[0.33] flex-col gap-2">
+          <div className="flex gap-4">
+            <div className="flex w-full flex-[0.33] flex-col gap-1">
               <DialogSection title="Category">
                 <ProjectSkillBadges skills={[project.category]} />
               </DialogSection>
-              {project.skills && (
-                <DialogSection title="Skills Used">
-                  <ProjectSkillBadges skills={project.skills} />
+              {project.tools && (
+                <DialogSection title="Tools Used">
+                  <ProjectSkillBadges skills={project.tools} />
+                </DialogSection>
+              )}
+              {project.softSkills && (
+                <DialogSection title="Soft Skills Used">
+                  <ProjectSkillBadges skills={project.softSkills} />
                 </DialogSection>
               )}
               {project.links && (

@@ -3,7 +3,7 @@ export interface ProjectData {
   brief: string;
   category: string;
   description: string;
-  skills: string[];
+  tools: string[];
   softSkills?: string[];
   displayImage: string;
   demoImages?: string[];
@@ -23,14 +23,8 @@ export const projects: ProjectData[] = [
     category: 'Web app',
     description: `This was my Bachelor graduation design project. It was a dashboard created for Esports Team Twente, our university's Esports team, who wanted a centralized dashboard where you could upload replay files from game, run them through a data analysis pipeline, and store and display statistics from matches. We created the frontend, backend, API and database implementation to solve their use case.`,
     displayImage: 'ett-dashboard/01.png',
-    skills: [
-      'React',
-      'TypeScript',
-      'MaterialUI',
-      'SWR',
-      'UX Testing Methodology',
-      'Scrum',
-    ],
+    tools: ['React', 'TypeScript', 'MaterialUI', 'SWR', 'Cypress'],
+    softSkills: ['UX Testing Methodology', 'Agile Scrum'],
     links: [
       {
         text: 'Esports Team Twente',
@@ -58,7 +52,8 @@ export const projects: ProjectData[] = [
     category: 'Research',
     description:
       'Beginning as my Bachelor thesis project, it was then partially rewritten and submitted to SPLASH conference on Software Language Engineering, and subsequently accepted for publication. This paper explores the concept of "pythonicity" and the so-called "pythonic-idioms" — in other words, what makes good Python code good. We conducted a literature review, detected uses of the idioms in open source code, and commented on idiom usage trends over time. One of the products of this research is my Pythonic idiom catalog.',
-    skills: ['Python', 'Kotlin', 'Literature review'],
+    tools: ['Python', 'Kotlin'],
+    softSkills: ['Literature review'],
     displayImage: 'zen-your-python/01.png',
     links: [
       {
@@ -86,9 +81,8 @@ export const projects: ProjectData[] = [
     category: 'Research',
     description:
       "In this project, we are designing an interface that will help people suffering from central vision loss improve their reading performance by making fine-grained adjustments the text presentation style. We will perform user studies to test this interface with readers. In future, this will integrate with an eye-tracking device and AI to help predict adjustments to text presentation styles that based on the user's reading patterns to help improve reading performance.",
-    skills: [
-      'Figma',
-      'React',
+    tools: ['Figma', 'React'],
+    softSkills: [
       'Requirements engineering',
       'UX Testing Methodology',
       'Project management',
@@ -108,7 +102,7 @@ export const projects: ProjectData[] = [
     category: 'Open source software',
     description:
       'An open-source Discord bot used in many large technology related Discord servers, totalling over 100,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.',
-    skills: ['Python', 'MongoDB', 'Discord.py', 'REST APIs', 'Docker'],
+    tools: ['Python', 'MongoDB', 'Discord.py', 'REST APIs', 'Docker'],
     displayImage: 'gir/image0.png',
     links: [
       {
@@ -124,7 +118,8 @@ export const projects: ProjectData[] = [
     category: 'Hi-Fi Prototype',
     description:
       "This web app, created as a high fidelity proof of concept for a human-computer interaction course, serves as a non-functional prototype designed to facilitate communication between sign language users and non-sign language users through a smart sign language translation app utilizing the phone's camera.",
-    skills: ['VueJS', 'Figma', 'Bulma', 'UX Testing Methodology'],
+    tools: ['VueJS', 'Figma', 'Bulma'],
+    softSkills: ['UX Testing Methodology'],
     displayImage: 'ezsign/0.png',
     demoImages: [
       'ezsign/1.png',
