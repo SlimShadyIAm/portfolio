@@ -9,11 +9,11 @@ type Props = {
 
 const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex flex-col gap-2 md:flex-row">
       <div className="flex flex-[0.4] items-center justify-center">
         <img
           src={`/images/projects/${project.displayImage}`}
-          className="z-10 h-52 max-h-full max-w-full rounded-lg"
+          className="z-10 h-52 max-h-full max-w-full rounded-lg shrink-0"
         />
       </div>
       <div className="flex h-full w-full flex-[0.6] flex-col justify-center gap-1 p-4">

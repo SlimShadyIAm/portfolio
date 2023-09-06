@@ -40,7 +40,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
           {project.title}
         </HeadlessDialog.Title>
         <div className="flex flex-1 flex-col gap-2">
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-col md:flex-row">
             <div className="flex w-full flex-[0.33] flex-col gap-1">
               <DialogSection title="Category">
                 <ProjectSkillBadges skills={[project.category]} />

@@ -2,6 +2,7 @@
 import React, { Fragment, ReactNode } from 'react';
 
 import { Dialog as HeadlessDialog, Transition } from '@headlessui/react';
+import { X } from 'lucide-react';
 
 type ProjectDialogProps = {
   show: boolean;
@@ -36,7 +37,13 @@ const Dialog = ({ children, show, closeModal }: ProjectDialogProps) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <HeadlessDialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+              <HeadlessDialog.Panel className="relative w-full max-w-5xl transform overflow-hidden rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <button
+                  className="absolute right-2 top-2 flex h-10 w-10 items-center justify-center rounded-full bg-black/75 text-2xl text-slate-200 z-10 md:invisible"
+                  onClick={closeModal}
+                >
+                  <X />
+                </button>
                 {children}
               </HeadlessDialog.Panel>
             </Transition.Child>

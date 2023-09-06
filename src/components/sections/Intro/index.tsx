@@ -5,8 +5,8 @@ import IntroBadge from '@/components/IntroBadge';
 
 const Intro = () => {
   return (
-    <div className="flex flex-col gap-6 mb-24">
-      <div className="relative self-start">
+    <div className="flex flex-col gap-6 md:mb-24 mb-12">
+      <div className="relative self-start -ml-4 md:ml-0">
         <div className="flex items-center justify-center rounded-full p-2">
           <div className="absolute top-0 z-0 mt-[16px] h-[120px] w-[120px] bg-indigo-500 blur-[100px]" />
           <Image
@@ -19,7 +19,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="flex max-w-3xl flex-col gap-4">
-        <h1 className="text-4xl font-semibold text-slate-400 ">
+        <h1 className="text-3xl md:text-4xl font-semibold text-slate-400 ">
           Hi, I&apos;m <span className="text-slate-200">Aamir Farooq</span>.
           Designer. Developer.
           <div className="relative">

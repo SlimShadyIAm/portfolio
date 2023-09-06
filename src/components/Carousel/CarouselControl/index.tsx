@@ -16,8 +16,8 @@ const CarouselControl = ({
     <button
       type="button"
       onClick={!isLeft ? handleNext : handlePrevious}
-      className={`absolute z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black text-2xl text-white opacity-75 self-center ${
-        isLeft ? 'left-8' : 'right-8'
+      className={`absolute z-10 flex h-10 w-10 items-center justify-center self-center rounded-full bg-black text-sm text-white opacity-75 md:text-2xl ${
+        isLeft ? 'left-2 md:left-8' : 'right-2 md:right-8'
       }`}
     >
       {isLeft ? <ArrowLeft /> : <ArrowRight />}

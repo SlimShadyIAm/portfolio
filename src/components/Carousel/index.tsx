@@ -46,19 +46,23 @@ const Carousel = ({ images }: Props) => {
 
   return (
     <>
-      <div className={styles.carousel + ' rounded-lg'}>
+      <div className={styles.carousel + ' relative rounded-lg'}>
         <CarouselControl
           isLeft
           handleNext={nextImage}
           handlePrevious={previousImage}
         />
         {images.map((img, i) => (
-          <div className="w-full justify-center flex-shrink-0 flex" key={img} ref={refs[i]}>
+          <div
+            className="flex w-full flex-shrink-0 justify-center"
+            key={img}
+            ref={refs[i]}
+          >
             <Image
               priority
               quality={50}
               src={`/images/projects/${img}`}
-              className="mb-2 h-96 max-h-96 w-auto max-w-full rounded-lg"
+              className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-lg md:h-96"
               alt="Demo demo image"
               width={1000}
               height={530}
@@ -70,7 +74,7 @@ const Carousel = ({ images }: Props) => {
           handlePrevious={previousImage}
         />
       </div>
-      <div className="mt-4 flex flex-row justify-center gap-2">
+      <div className="mb-4 mt-2 md:mt-4 flex flex-row justify-center gap-2 md:mb-0">
         {images.map((_, i) => (
           <button
             className={`h-2.5 w-2.5 ${
