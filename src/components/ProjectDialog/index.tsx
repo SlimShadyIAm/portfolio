@@ -6,7 +6,7 @@ import Carousel from '@/components/Carousel';
 import Dialog from './Dialog';
 import { Dialog as HeadlessDialog } from '@headlessui/react';
 import DialogSection from './DialogSection';
-import { Github, Globe2, Link } from 'lucide-react';
+import { Link } from 'lucide-react';
 import ProjectSkillBadges from '@/components/ProjectSkillBadges';
 
 type ProjectDialogProps = {
@@ -24,13 +24,15 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
           {project.demoImages ? (
             <Carousel images={project.demoImages} />
           ) : (
-            <Image
-              src={`/images/projects/${project.displayImage}`}
-              width={1000}
-              height={530}
-              alt="Project display image"
-              className="h-96 max-h-96 w-auto max-w-full rounded-lg mb-2"
-            />
+            <div className="shrink-0">
+              <Image
+                src={`/images/projects/${project.displayImage}`}
+                width={1000}
+                height={530}
+                alt="Project display image"
+                className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-lg md:h-96"
+              />
+            </div>
           )}
         </div>
         <HeadlessDialog.Title
@@ -40,7 +42,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
           {project.title}
         </HeadlessDialog.Title>
         <div className="flex flex-1 flex-col gap-2">
-          <div className="flex gap-4 flex-col md:flex-row">
+          <div className="flex flex-col gap-4 md:flex-row">
             <div className="flex w-full flex-[0.33] flex-col gap-1">
               <DialogSection title="Category">
                 <ProjectSkillBadges skills={[project.category]} />

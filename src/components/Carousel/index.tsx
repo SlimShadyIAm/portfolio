@@ -46,7 +46,7 @@ const Carousel = ({ images }: Props) => {
 
   return (
     <>
-      <div className={styles.carousel + ' relative rounded-lg'}>
+      <div className={styles.carousel + ' rounded-lg'}>
         <CarouselControl
           isLeft
           handleNext={nextImage}
