@@ -63,6 +63,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
                     <a
                       href={link.url}
                       className="flex flex-row items-center gap-2 text-sm text-indigo-300 transition-colors hover:text-indigo-500"
+                      key={link.url}
                     >
                       <Link size={16} />
                       {link.text}
