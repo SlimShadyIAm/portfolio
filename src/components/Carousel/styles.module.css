@@ -1,8 +1,8 @@
 .carousel {
-  display: inline-flex;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }

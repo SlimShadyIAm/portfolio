@@ -46,7 +46,11 @@ const Carousel = ({ images }: Props) => {
 
   return (
     <>
-      <div className={styles.carousel + ' rounded-lg'}>
+      <div
+        className={
+          `scrollbar flex w-full snap-x snap-mandatory overflow-x-auto rounded-lg ${styles.carousel}`
+        }
+      >
         <CarouselControl
           isLeft
           handleNext={nextImage}
@@ -54,7 +58,7 @@ const Carousel = ({ images }: Props) => {
         />
         {images.map((img, i) => (
           <div
-            className="flex w-full flex-shrink-0 justify-center"
+            className="flex w-full flex-shrink-0 snap-center justify-center"
             key={img}
             ref={refs[i]}
           >
@@ -74,7 +78,7 @@ const Carousel = ({ images }: Props) => {
           handlePrevious={previousImage}
         />
       </div>
-      <div className="mb-4 mt-2 md:mt-4 flex flex-row justify-center gap-2 md:mb-0">
+      <div className="mb-4 mt-2 flex flex-row justify-center gap-2 md:mb-0 md:mt-4">
         {images.map((_, i) => (
           <button
             className={`h-2.5 w-2.5 ${
