@@ -152,7 +152,7 @@ export const projects: ProjectData[] = [
     links: [
       {
         text: 'GitHub',
-        url: 'https://github.com/SlimShadyIAm/portfolio-react',
+        url: 'https://github.com/SlimShadyIAm/portfolio',
       },
       {
         text: '@jamesm (Inspiration)',
