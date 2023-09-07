@@ -141,4 +141,30 @@ export const projects: ProjectData[] = [
       },
     ],
   },
+  {
+    title: 'Portfolio',
+    brief: 'The portfolio website you\'re currently looking at :)',
+    category: 'Web app',
+    tools: ['Next.js', 'React', 'TailwindCSS', 'Figma', 'ESLint', 'Prettier'],
+    description: 'This is my latest iteration of my portfolio. In this iteration, I strove to make as much information available about me and my work experience as concise as I could, while also trying to make the design aesthetically pleasing, drawing inspiration from designers such as @jamesm.',
+    displayImage: 'portfolio/portfolio0.png',
+    links: [
+      {
+        text: 'GitHub',
+        url: 'https://github.com/SlimShadyIAm/portfolio-react'
+      },
+      {
+        text: '@jamesm (Inspiration)',
+        url: 'https://twitter.com/jamesm'
+      },
+      {
+        text: '@brandonsaldan (Inspiration)',
+        url: 'https://brandons.place'
+      },
+      {
+        text: 'Prettyfolio (Inspiration)',
+        url: 'https://www.prettyfolio.com/'
+      }
+    ]
+  }
 ];

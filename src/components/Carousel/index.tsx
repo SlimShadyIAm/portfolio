@@ -66,7 +66,7 @@ const Carousel = ({ images }: Props) => {
               priority
               quality={50}
               src={`/images/projects/${img}`}
-              className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-lg md:h-96"
+              className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-sm md:h-96"
               alt="Demo demo image"
               width={1000}
               height={530}

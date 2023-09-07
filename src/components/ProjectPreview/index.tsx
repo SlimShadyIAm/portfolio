@@ -13,7 +13,7 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
       <div className="flex flex-[0.4] items-center justify-center shrink-0">
         <img
           src={`/images/projects/${project.displayImage}`}
-          className="z-10 h-52 max-h-full max-w-full rounded-lg shrink-0 object-cover"
+          className="z-10 h-52 max-h-full max-w-full rounded-sm shrink-0 object-cover"
         />
       </div>
       <div className="flex h-full w-full flex-[0.6] flex-col justify-center gap-1 p-4">

@@ -20,7 +20,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
   return (
     <Dialog closeModal={closeModal} show={!!project}>
       <div className="flex flex-col gap-2">
-        <div className="flex flex-1 flex-col items-center rounded-lg">
+        <div className="flex flex-1 flex-col items-center rounded-sm">
           {project.demoImages ? (
             <Carousel images={project.demoImages} />
           ) : (
@@ -30,7 +30,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
                 width={1000}
                 height={530}
                 alt="Project display image"
-                className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-lg md:h-96"
+                className="mb-2 max-h-96 w-auto max-w-full shrink-0 rounded-sm md:h-96"
               />
             </div>
           )}
