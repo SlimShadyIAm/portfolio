@@ -21,7 +21,7 @@ const EducationItem = ({
   location,
 }: Props) => {
   const lineCss =
-    'after:mx-auto after:my-2 after:block after:h-12 after:w-[1px] after:rounded-full after:bg-slate-300/20 after:shadow-sm after:shadow-slate-800/5 after:backdrop-blur';
+    'after:mx-auto after:my-2 after:block after:h-24 after:sm:h-12 after:md:h-16 after:lg:h-12 after:w-[1px] after:rounded-full after:bg-slate-300/20 after:shadow-sm after:shadow-slate-800/5 after:backdrop-blur';
 
   return (
     <div className="flex w-full flex-row gap-4 p-1">
