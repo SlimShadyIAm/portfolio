@@ -85,7 +85,7 @@ const Carousel = ({ images }: Props) => {
               i === currentImage ? 'bg-slate-300/80' : 'bg-slate-300/30'
             } rounded-full transition-colors`}
             onClick={() => scrollToImage(i)}
-            key={currentImage}
+            key={i}
           />
         ))}
       </div>
