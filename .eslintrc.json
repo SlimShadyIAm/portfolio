@@ -1,3 +1,11 @@
 {
-  "extends": "@slimshadyiam"
+  "extends": "@slimshadyiam",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/extensions": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "react/no-array-index-key": "off"
+  }
 }

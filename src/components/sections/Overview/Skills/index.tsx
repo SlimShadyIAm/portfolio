@@ -14,13 +14,13 @@ const Skills = () => {
     'HTML',
     'CSS',
     'Python',
-    "Java",
+    'Java',
     'Figma',
-    "Git",
-    "Docker",
-    "SQL",
-    "Vim",
-    "Linux",
+    'Git',
+    'Docker',
+    'SQL',
+    'Vim',
+    'Linux',
   ];
 
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <p className="text-sm mt-24 text-center text-slate-500 w-full">
+    <p className="mt-24 w-full text-center text-sm text-slate-500">
       &copy; Aamir Farooq 2023. All rights reserved.
     </p>
   );

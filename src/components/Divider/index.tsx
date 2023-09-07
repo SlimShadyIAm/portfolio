@@ -2,8 +2,8 @@ import React from 'react';
 
 const Divider = () => {
   return (
-    <div className="h-[1px] w-[90%] self-center bg-gradient-to-r from-slate-950 via-indigo-500/80 to-slate-950 mix-blend relative flex justify-center z-10" >
-      <div className='absolute h-[2px] w-[40%] bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 top-0 blur-md' />
+    <div className="mix-blend relative z-10 flex h-[1px] w-[90%] justify-center self-center bg-gradient-to-r from-slate-950 via-indigo-500/80 to-slate-950">
+      <div className="absolute top-0 h-[2px] w-[40%] bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 blur-md" />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import EducationItem from './EducationItem';
 import { GraduationCap } from 'lucide-react';
+import EducationItem from './EducationItem';
 import OverviewCard from '@/components/OverviewCard';
 
 const Education = () => {

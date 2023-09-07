@@ -1,4 +1,4 @@
-import { Expand, Github, Link } from 'lucide-react';
+import { Expand } from 'lucide-react';
 import { ProjectData } from '@/data/projectData';
 import ProjectSkillBadges from '@/components/ProjectSkillBadges';
 
@@ -10,10 +10,11 @@ type Props = {
 const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
     <div className="flex flex-col gap-2 md:flex-row">
-      <div className="flex flex-[0.4] items-center justify-center shrink-0">
+      <div className="flex flex-[0.4] shrink-0 items-center justify-center">
         <img
           src={`/images/projects/${project.displayImage}`}
-          className="z-10 h-52 max-h-full max-w-full rounded-sm shrink-0 object-cover"
+          className="z-10 h-52 max-h-full max-w-full shrink-0 rounded-sm object-cover"
+          alt={`${project.title} preview`}
         />
       </div>
       <div className="flex h-full w-full flex-[0.6] flex-col justify-center gap-1 p-4">
@@ -25,6 +26,7 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
         <ProjectSkillBadges skills={project.tools} />
         <div className="flex flex-row gap-4 justify-self-end">
           <button
+            type="button"
             className="mt-4 flex items-center gap-2 rounded-md bg-slate-900 px-3 py-2 text-sm text-slate-300/75 ring ring-slate-800 transition-colors hover:bg-slate-600/30 hover:text-slate-100/75"
             onClick={setSelectedProject}
           >

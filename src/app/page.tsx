@@ -1,10 +1,10 @@
+import { Metadata } from 'next';
 import Intro from '@/components/sections/Intro';
 import styles from './styles.module.css';
 import Overview from '@/components/sections/Overview';
 import Projects from '@/components/sections/Projects';
 import Divider from '@/components/Divider';
 import Footer from '@/components/Footer';
-import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   themeColor: [

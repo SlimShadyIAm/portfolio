@@ -11,7 +11,7 @@ const DialogSection = ({ title, children }: Props) => {
       <h2 className="mb-2 text-sm font-semibold uppercase text-indigo-400">
         {title}
       </h2>
-      <div className="flex flex-col gap-2 text-md text-slate-300/90 mb-3">
+      <div className="text-md mb-3 flex flex-col gap-2 text-slate-300/90">
         {children}
       </div>
     </div>

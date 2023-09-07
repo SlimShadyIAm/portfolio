@@ -41,7 +41,7 @@ const Intro = () => {
         <IntroBadge icon={CakeSlice} text="23 years old" />
         <IntroBadge icon={Map} text="Copenhagen, Denmark" />
       </div>
-      <div className="flex justify-center gap-6 md:justify-start w-full">
+      <div className="flex w-full justify-center gap-6 md:justify-start">
         <SocialButton icon={Github} url="https://github.com/SlimShadyIAm" />
         <SocialButton icon={Twitter} url="https://twitter.com/slimshadydev" />
         <SocialButton

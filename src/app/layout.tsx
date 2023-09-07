@@ -9,11 +9,7 @@ export const metadata: Metadata = {
   description: 'A showcase of who I am and my previous work experience',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" style={{ height: '100%' }}>
       <body className={`flex ${inter.className} min-h-full bg-black`}>
@@ -21,4 +17,5 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+export default RootLayout;

@@ -1,12 +1,12 @@
 'use client';
 
-import { ProjectData } from '@/data/projectData';
 import Image from 'next/image';
+import { Dialog as HeadlessDialog } from '@headlessui/react';
+import { Link } from 'lucide-react';
+import { ProjectData } from '@/data/projectData';
 import Carousel from '@/components/Carousel';
 import Dialog from './Dialog';
-import { Dialog as HeadlessDialog } from '@headlessui/react';
 import DialogSection from './DialogSection';
-import { Link } from 'lucide-react';
 import ProjectSkillBadges from '@/components/ProjectSkillBadges';
 
 type ProjectDialogProps = {
@@ -65,6 +65,7 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
                       className="flex flex-row items-center gap-2 text-sm text-indigo-300 transition-colors hover:text-indigo-500"
                       key={link.url}
                     >
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <Link size={16} />
                       {link.text}
                     </a>

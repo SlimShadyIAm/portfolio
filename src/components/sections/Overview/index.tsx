@@ -4,7 +4,7 @@ import Skills from './Skills';
 
 const Overview = () => {
   return (
-    <div className="flex w-full flex-col md:flex-row gap-4 mb-12">
+    <div className="mb-12 flex w-full flex-col gap-4 md:flex-row">
       <Education />
       <Skills />
     </div>

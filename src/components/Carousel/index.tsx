@@ -1,6 +1,6 @@
 import { RefObject, createRef, useState } from 'react';
-import styles from './styles.module.css';
 import Image from 'next/image';
+import styles from './styles.module.css';
 import CarouselControl from './CarouselControl';
 
 type Props = {
@@ -18,6 +18,16 @@ const Carousel = ({ images }: Props) => {
   );
   const totalImages = images.length;
 
+  const scrollToImage = (i: number) => {
+    setCurrentImage(i);
+
+    refs[i].current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'start',
+    });
+  };
+
   const nextImage = () => {
     if (currentImage >= totalImages - 1) {
       scrollToImage(0);
@@ -34,22 +44,10 @@ const Carousel = ({ images }: Props) => {
     }
   };
 
-  const scrollToImage = (i: number) => {
-    setCurrentImage(i);
-
-    refs[i].current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'start',
-    });
-  };
-
   return (
     <>
       <div
-        className={
-          `scrollbar flex w-full snap-x snap-mandatory overflow-x-auto rounded-lg ${styles.carousel}`
-        }
+        className={`scrollbar flex w-full snap-x snap-mandatory overflow-x-auto rounded-lg ${styles.carousel}`}
       >
         <CarouselControl
           isLeft
@@ -85,6 +83,7 @@ const Carousel = ({ images }: Props) => {
               i === currentImage ? 'bg-slate-300/80' : 'bg-slate-300/30'
             } rounded-full transition-colors`}
             onClick={() => scrollToImage(i)}
+            type="button"
             key={i}
           />
         ))}

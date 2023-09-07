@@ -53,8 +53,8 @@ dependencies:
 
 devDependencies:
   '@slimshadyiam/eslint-config':
-    specifier: ^1.0.0
-    version: 1.0.0(eslint-plugin-jsx-a11y@6.7.1)(typescript@5.2.2)
+    specifier: ^1.0.1
+    version: 1.0.1(eslint-plugin-jsx-a11y@6.7.1)(typescript@5.2.2)
   '@slimshadyiam/prettier-config':
     specifier: ^1.0.0
     version: 1.0.0(typescript@5.2.2)
@@ -299,8 +299,8 @@ packages:
     resolution: {integrity: sha512-0xd7qez0AQ+MbHatZTlI1gu5vkG8r7MYRUJAHPAHJBmGLs16zpkrpAVLvjQKQOqaXPDUBwOiJzNc00znHSCVBw==}
     dev: false
 
-  /@slimshadyiam/eslint-config@1.0.0(eslint-plugin-jsx-a11y@6.7.1)(typescript@5.2.2):
-    resolution: {integrity: sha512-TaLsi4DAfwNGQflF2/CpmRkUUCu7gcLvHeQCGLUM/JIdhYuj6tIr8e2UUAuCbXWNfdomUyVCZCQ11bfmeV+aRg==}
+  /@slimshadyiam/eslint-config@1.0.1(eslint-plugin-jsx-a11y@6.7.1)(typescript@5.2.2):
+    resolution: {integrity: sha512-drrk3iakKmuOU5FAJ3imwm7lScNJHzeI/bFtONHqAVB+6Gv/1pAL4wXLb5Lpo9ERA3bXStvDBNU2cNDSC1MHbw==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.48.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 5.62.0(eslint@8.48.0)(typescript@5.2.2)
