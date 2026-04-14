@@ -43,9 +43,10 @@ const Intro = () => {
           </div>
         </h1>
         <p className="text-slate-400">
-          Nice to meet you! I&apos;m an enthusiastic frontend developer and UX
-          designer who is passionate about people and building products they
-          want to use. Challenging design tasks are my bread and butter.
+          Nice to meet you! I&apos;m an enthusiastic fullstack developer with
+          experience across product, platform, and systems work, and a strong
+          track record of taking ownership of my work. I am always looking for
+          new challenges to grow my skills.
         </p>
       </div>
       <div className="mb-[-8px] flex gap-3">
