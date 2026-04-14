@@ -44,9 +44,10 @@ const Intro = () => {
         </h1>
         <p className="text-slate-400">
           Nice to meet you! I&apos;m an enthusiastic fullstack developer with
-          experience across product, platform, and systems work, and a strong
-          track record of taking ownership of my work. I am always looking for
-          new challenges to grow my skills.
+          experience across product, platform, and systems work. I own my
+          projects end-to-end, and increasingly build with agentic workflows to
+          accelerate development and reduce manual overhead. I am always looking
+          for new challenges to grow my skills.
         </p>
       </div>
       <div className="mb-[-8px] flex gap-3">
