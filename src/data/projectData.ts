@@ -17,6 +17,35 @@ interface Link {
 
 export const projects: ProjectData[] = [
   {
+    title: 'Handpan Copenhagen',
+    brief:
+      'A website for Handpan Copenhagen: the first handpan school in Scandinavia',
+    category: 'Fullstack app',
+    description:
+      'This website was built from the ground up for Handpan Copenhagen: the first handpan school in Scandinavia. It was built to be the main marketing tool for the school and I took many decisions with that in mind. All booking for classes are done through the website using an integration to Terapeut Booking, a booking system based in Denmark. It is 100% internationalized using next-intl, and a lot of the content is managed through Sanity CMS so that non-technical staff can easily update the content. The website has also been optimized for SEO and performance.\n\nMy efforts have been extremely successful. The school, having just opened in May of 2025, has fully booked classes and events, and their instrument sales have also been very successful. The business has already turned a profit, and a large part of this is thanks to the website. In addition to building the website, I provide ongoing support to their technical systems and constantly look for ways to improve their digital processes.',
+    tools: [
+      'Next.js',
+      'React',
+      'TailwindCSS',
+      'Sanity CMS',
+      'ESLint',
+      'Cloudflare Turnstile',
+      'SEO',
+      'Posthog',
+      'Netlify',
+    ],
+    displayImage: 'handpan-copenhagen/0.png',
+    links: [],
+    demoImages: [
+      'handpan-copenhagen/1.jpeg',
+      'handpan-copenhagen/2.png',
+      'handpan-copenhagen/3.png',
+      'handpan-copenhagen/4.jpeg',
+      'handpan-copenhagen/5.png',
+      'handpan-copenhagen/6.jpeg',
+    ],
+  },
+  {
     title: 'Esports Team Twente Dashboard',
     brief:
       "My bachelor project: a dashboard for my university's Esports team, allowing them to upload and analyze replay files from games and display match statistics.",
