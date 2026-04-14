@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Viewport } from 'next';
 import Intro from '@/components/sections/Intro';
 import styles from './styles.module.css';
 import Overview from '@/components/sections/Overview';
@@ -6,7 +6,7 @@ import Projects from '@/components/sections/Projects';
 import Divider from '@/components/Divider';
 import Footer from '@/components/Footer';
 
-export const metadata: Metadata = {
+export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#020617' },
     { media: '(prefers-color-scheme: dark)', color: '#020617' },

@@ -3,6 +3,17 @@ import Image from 'next/image';
 import SocialButton from '@/components/SocialButton';
 import IntroBadge from '@/components/IntroBadge';
 
+const calculateAge = (birthDate: string) => {
+  const birth = new Date(birthDate);
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  const m = today.getMonth() - birth.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+    age -= 1;
+  }
+  return age;
+};
+
 const Intro = () => {
   return (
     <div className="mb-12 flex flex-col gap-6 md:mb-24">
@@ -19,7 +30,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="flex max-w-3xl flex-col gap-4">
-        <h1 className="text-3xl font-semibold text-slate-400 md:text-4xl ">
+        <h1 className="text-3xl font-semibold text-slate-400 md:text-4xl">
           Hi, I&apos;m <span className="text-slate-200">Aamir Farooq</span>.
           Designer. Developer.
           <div className="relative">
@@ -38,7 +49,10 @@ const Intro = () => {
         </p>
       </div>
       <div className="mb-[-8px] flex gap-3">
-        <IntroBadge icon={CakeSlice} text="23 years old" />
+        <IntroBadge
+          icon={CakeSlice}
+          text={`${calculateAge('1999-11-28')} years old`}
+        />
         <IntroBadge icon={Map} text="Copenhagen, Denmark" />
       </div>
       <div className="flex w-full justify-center gap-6 md:justify-start">

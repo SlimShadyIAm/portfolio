@@ -19,7 +19,7 @@ const Projects = () => {
       <ProjectDialog project={selectedProject} closeModal={closeModal} />
       <div className="flex flex-col gap-8">
         {projects.map((project, i) => (
-          <>
+          <React.Fragment key={project.title}>
             <ProjectPreview
               setSelectedProject={() => setSelectedProject(project)}
               project={project}
@@ -29,7 +29,7 @@ const Projects = () => {
                 <div className="absolute top-0 h-[2px] w-24 bg-gradient-to-r from-slate-950 via-indigo-500 to-slate-950 blur-sm" />
               </div>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>

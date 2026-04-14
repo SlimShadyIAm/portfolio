@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Expand } from 'lucide-react';
 import { ProjectData } from '@/data/projectData';
 import ProjectSkillBadges from '@/components/ProjectSkillBadges';
@@ -11,8 +12,10 @@ const ProjectPreview = ({ project, setSelectedProject }: Props) => {
   return (
     <div className="flex flex-col gap-2 md:flex-row">
       <div className="flex flex-[0.4] shrink-0 items-center justify-center">
-        <img
+        <Image
           src={`/images/projects/${project.displayImage}`}
+          width={400}
+          height={208}
           className="z-10 h-52 max-h-full max-w-full shrink-0 rounded-sm object-cover"
           alt={`${project.title} preview`}
         />

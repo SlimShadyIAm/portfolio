@@ -10,8 +10,8 @@ type Props = {
 const Carousel = ({ images }: Props) => {
   const [currentImage, setCurrentImage] = useState(0);
   const refs = images.reduce(
-    (acc: { [key: number]: RefObject<HTMLDivElement> }, _, i) => {
-      acc[i] = createRef();
+    (acc: { [key: number]: RefObject<HTMLDivElement | null> }, _, i) => {
+      acc[i] = createRef<HTMLDivElement>();
       return acc;
     },
     {}

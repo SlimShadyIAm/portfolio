@@ -11,7 +11,7 @@ const Education = () => {
         alt="DTU Logo"
         title="Technical University of Denmark"
         location="Copenhagen, Denmark"
-        years="2021 – Current"
+        years="2022 – 2024"
         description="MSc. Computer Science and Engineering (spec. Software Engineering)"
       />
       <EducationItem

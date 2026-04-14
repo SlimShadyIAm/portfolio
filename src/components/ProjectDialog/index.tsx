@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Dialog as HeadlessDialog } from '@headlessui/react';
+import { DialogTitle } from '@headlessui/react';
 import { Link } from 'lucide-react';
 import { ProjectData } from '@/data/projectData';
 import Carousel from '@/components/Carousel';
@@ -35,12 +35,12 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
             </div>
           )}
         </div>
-        <HeadlessDialog.Title
+        <DialogTitle
           as="h3"
           className="my-2 text-xl font-medium leading-6 text-slate-200"
         >
           {project.title}
-        </HeadlessDialog.Title>
+        </DialogTitle>
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex flex-col gap-4 md:flex-row">
             <div className="flex w-full flex-[0.33] flex-col gap-1">
@@ -65,7 +65,6 @@ const ProjectDialog = ({ project, closeModal }: ProjectDialogProps) => {
                       className="flex flex-row items-center gap-2 text-sm text-indigo-300 transition-colors hover:text-indigo-500"
                       key={link.url}
                     >
-                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                       <Link size={16} />
                       {link.text}
                     </a>
