@@ -35,7 +35,12 @@ export const projects: ProjectData[] = [
       'Netlify',
     ],
     displayImage: 'handpan-copenhagen/0.png',
-    links: [],
+    links: [
+      {
+        text: 'Website',
+        url: 'https://handpancopenhagen.com/',
+      },
+    ],
     demoImages: [
       'handpan-copenhagen/1.jpeg',
       'handpan-copenhagen/2.png',
